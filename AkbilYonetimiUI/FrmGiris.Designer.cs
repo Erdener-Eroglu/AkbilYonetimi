@@ -41,9 +41,9 @@
             // 
             btnGiris.BackColor = Color.Snow;
             btnGiris.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnGiris.Location = new Point(172, 167);
+            btnGiris.Location = new Point(12, 152);
             btnGiris.Name = "btnGiris";
-            btnGiris.Size = new Size(112, 60);
+            btnGiris.Size = new Size(274, 43);
             btnGiris.TabIndex = 16;
             btnGiris.Text = "Giriş Yap";
             btnGiris.UseVisualStyleBackColor = false;
@@ -52,9 +52,9 @@
             // 
             btnKayitOl.BackColor = Color.Snow;
             btnKayitOl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnKayitOl.Location = new Point(40, 167);
+            btnKayitOl.Location = new Point(12, 201);
             btnKayitOl.Name = "btnKayitOl";
-            btnKayitOl.Size = new Size(112, 60);
+            btnKayitOl.Size = new Size(274, 43);
             btnKayitOl.TabIndex = 17;
             btnKayitOl.Text = "Kayıt Ol";
             btnKayitOl.UseVisualStyleBackColor = false;
