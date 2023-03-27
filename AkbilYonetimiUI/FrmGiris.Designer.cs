@@ -44,9 +44,10 @@
             btnGiris.Location = new Point(12, 152);
             btnGiris.Name = "btnGiris";
             btnGiris.Size = new Size(274, 43);
-            btnGiris.TabIndex = 16;
+            btnGiris.TabIndex = 3;
             btnGiris.Text = "Giriş Yap";
             btnGiris.UseVisualStyleBackColor = false;
+            btnGiris.Click += btnGiris_Click;
             // 
             // btnKayitOl
             // 
@@ -55,9 +56,10 @@
             btnKayitOl.Location = new Point(12, 201);
             btnKayitOl.Name = "btnKayitOl";
             btnKayitOl.Size = new Size(274, 43);
-            btnKayitOl.TabIndex = 17;
+            btnKayitOl.TabIndex = 4;
             btnKayitOl.Text = "Kayıt Ol";
             btnKayitOl.UseVisualStyleBackColor = false;
+            btnKayitOl.Click += btnKayitOl_Click;
             // 
             // checkBoxHatirla
             // 
@@ -66,9 +68,10 @@
             checkBoxHatirla.Location = new Point(146, 114);
             checkBoxHatirla.Name = "checkBoxHatirla";
             checkBoxHatirla.Size = new Size(140, 32);
-            checkBoxHatirla.TabIndex = 15;
+            checkBoxHatirla.TabIndex = 2;
             checkBoxHatirla.Text = "Beni Hatırla!";
             checkBoxHatirla.UseVisualStyleBackColor = true;
+            checkBoxHatirla.CheckedChanged += checkBoxHatirla_CheckedChanged;
             // 
             // txtSifre
             // 
@@ -76,7 +79,8 @@
             txtSifre.Location = new Point(105, 64);
             txtSifre.Name = "txtSifre";
             txtSifre.Size = new Size(181, 34);
-            txtSifre.TabIndex = 13;
+            txtSifre.TabIndex = 1;
+            txtSifre.KeyPress += txtSifre_KeyPress;
             // 
             // txtEmail
             // 
@@ -84,7 +88,7 @@
             txtEmail.Location = new Point(105, 22);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(181, 34);
-            txtEmail.TabIndex = 14;
+            txtEmail.TabIndex = 0;
             // 
             // label2
             // 
@@ -122,6 +126,7 @@
             Controls.Add(label1);
             Name = "FrmGiris";
             Text = "HOŞGELDİNİZ...";
+            Load += FrmGiris_Load;
             ResumeLayout(false);
             PerformLayout();
         }

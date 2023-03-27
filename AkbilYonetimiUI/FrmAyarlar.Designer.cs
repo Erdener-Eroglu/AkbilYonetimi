@@ -1,6 +1,6 @@
 ﻿namespace AkbilYonetimiUI
 {
-    partial class FrmKayitOl
+    partial class FrmAyarlar
     {
         /// <summary>
         /// Required designer variable.
@@ -33,12 +33,11 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            btnGuncelle = new Button();
+            txtEmail = new TextBox();
             txtAd = new TextBox();
             txtSoyad = new TextBox();
-            txtEmail = new TextBox();
             txtSifre = new TextBox();
-            btnKayıtOl = new Button();
-            btnGiris = new Button();
             dtpDogumTarihi = new DateTimePicker();
             SuspendLayout();
             // 
@@ -46,134 +45,123 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(84, 37);
+            label1.Location = new Point(28, 35);
             label1.Name = "label1";
-            label1.Size = new Size(51, 28);
+            label1.Size = new Size(63, 28);
             label1.TabIndex = 0;
-            label1.Text = "İsim:";
+            label1.Text = "Email:";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(51, 80);
+            label2.Location = new Point(40, 78);
             label2.Name = "label2";
-            label2.Size = new Size(84, 28);
+            label2.Size = new Size(51, 28);
             label2.TabIndex = 0;
-            label2.Text = "Soyisim:";
+            label2.Text = "İsim:";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(72, 123);
+            label3.Location = new Point(7, 121);
             label3.Name = "label3";
-            label3.Size = new Size(63, 28);
+            label3.Size = new Size(84, 28);
             label3.TabIndex = 0;
-            label3.Text = "Email:";
+            label3.Text = "Soyisim:";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(80, 166);
+            label4.Location = new Point(312, 32);
             label4.Name = "label4";
-            label4.Size = new Size(55, 28);
+            label4.Size = new Size(80, 28);
             label4.TabIndex = 0;
-            label4.Text = "Şifre:";
+            label4.Text = "D.Tarihi:";
+            label4.TextAlign = ContentAlignment.TopCenter;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(50, 213);
+            label5.Location = new Point(297, 115);
             label5.Name = "label5";
-            label5.Size = new Size(85, 28);
+            label5.Size = new Size(95, 28);
             label5.TabIndex = 0;
-            label5.Text = "D. Tarihi:";
+            label5.Text = "Yeni Şifre:";
             // 
-            // txtAd
+            // btnGuncelle
             // 
-            txtAd.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtAd.Location = new Point(140, 34);
-            txtAd.Name = "txtAd";
-            txtAd.Size = new Size(250, 34);
-            txtAd.TabIndex = 1;
-            // 
-            // txtSoyad
-            // 
-            txtSoyad.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSoyad.Location = new Point(140, 77);
-            txtSoyad.Name = "txtSoyad";
-            txtSoyad.Size = new Size(250, 34);
-            txtSoyad.TabIndex = 1;
+            btnGuncelle.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            btnGuncelle.Location = new Point(21, 201);
+            btnGuncelle.Name = "btnGuncelle";
+            btnGuncelle.Size = new Size(561, 58);
+            btnGuncelle.TabIndex = 1;
+            btnGuncelle.Text = "BİLGİLERİ GÜNCELLE";
+            btnGuncelle.UseVisualStyleBackColor = true;
+            btnGuncelle.Click += btnGuncelle_Click;
             // 
             // txtEmail
             // 
             txtEmail.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEmail.Location = new Point(140, 120);
+            txtEmail.Location = new Point(88, 29);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(250, 34);
-            txtEmail.TabIndex = 1;
+            txtEmail.Size = new Size(184, 34);
+            txtEmail.TabIndex = 2;
+            // 
+            // txtAd
+            // 
+            txtAd.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtAd.Location = new Point(88, 75);
+            txtAd.Name = "txtAd";
+            txtAd.Size = new Size(184, 34);
+            txtAd.TabIndex = 2;
+            // 
+            // txtSoyad
+            // 
+            txtSoyad.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSoyad.Location = new Point(88, 118);
+            txtSoyad.Name = "txtSoyad";
+            txtSoyad.Size = new Size(184, 34);
+            txtSoyad.TabIndex = 2;
             // 
             // txtSifre
             // 
             txtSifre.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSifre.Location = new Point(140, 163);
+            txtSifre.Location = new Point(398, 115);
             txtSifre.Name = "txtSifre";
-            txtSifre.Size = new Size(250, 34);
-            txtSifre.TabIndex = 1;
-            // 
-            // btnKayıtOl
-            // 
-            btnKayıtOl.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnKayıtOl.Location = new Point(84, 256);
-            btnKayıtOl.Name = "btnKayıtOl";
-            btnKayıtOl.Size = new Size(306, 42);
-            btnKayıtOl.TabIndex = 2;
-            btnKayıtOl.Text = "KAYIT OL";
-            btnKayıtOl.UseVisualStyleBackColor = true;
-            btnKayıtOl.Click += btnKayıtOl_Click;
-            // 
-            // btnGiris
-            // 
-            btnGiris.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnGiris.Location = new Point(84, 313);
-            btnGiris.Name = "btnGiris";
-            btnGiris.Size = new Size(306, 42);
-            btnGiris.TabIndex = 2;
-            btnGiris.Text = "GİRİŞ YAP";
-            btnGiris.UseVisualStyleBackColor = true;
-            btnGiris.Click += btnGiris_Click;
+            txtSifre.Size = new Size(184, 34);
+            txtSifre.TabIndex = 2;
             // 
             // dtpDogumTarihi
             // 
-            dtpDogumTarihi.Location = new Point(140, 215);
+            dtpDogumTarihi.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            dtpDogumTarihi.Location = new Point(398, 27);
             dtpDogumTarihi.Name = "dtpDogumTarihi";
-            dtpDogumTarihi.Size = new Size(250, 27);
+            dtpDogumTarihi.Size = new Size(184, 34);
             dtpDogumTarihi.TabIndex = 3;
             // 
-            // FrmKayitOl
+            // FrmAyarlar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(492, 407);
+            ClientSize = new Size(594, 322);
             Controls.Add(dtpDogumTarihi);
-            Controls.Add(btnGiris);
-            Controls.Add(btnKayıtOl);
             Controls.Add(txtSifre);
-            Controls.Add(txtEmail);
             Controls.Add(txtSoyad);
             Controls.Add(txtAd);
+            Controls.Add(txtEmail);
+            Controls.Add(btnGuncelle);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "FrmKayitOl";
-            Text = "KAYIT OL FORMU";
-            FormClosed += FrmKayitOl_FormClosed;
-            Load += FrmKayitOl_Load;
+            Name = "FrmAyarlar";
+            Text = "FrmAyarlar";
+            Load += FrmAyarlar_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -185,12 +173,11 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Button btnGuncelle;
+        private TextBox txtEmail;
         private TextBox txtAd;
         private TextBox txtSoyad;
-        private TextBox txtEmail;
         private TextBox txtSifre;
-        private Button btnKayıtOl;
-        private Button btnGiris;
         private DateTimePicker dtpDogumTarihi;
     }
 }
