@@ -66,6 +66,7 @@ public partial class FrmGiris : Form
                 while (okuyucu.Read())
                 {
                     MessageBox.Show($"HOŞGELDİNİZ {okuyucu["Ad"]} {okuyucu["Soyad"]}");
+                    Properties.Settings1.Default.KullaniciId = (int)okuyucu["ID"];
                 }
                 baglanti.Close();
             }

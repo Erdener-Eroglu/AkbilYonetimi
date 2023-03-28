@@ -32,11 +32,11 @@
             anaMenüToolStripMenuItem = new ToolStripMenuItem();
             çıkışYapToolStripMenuItem = new ToolStripMenuItem();
             groupBox1 = new GroupBox();
-            label1 = new Label();
-            label2 = new Label();
-            maskedTextBoxAkbilNo = new MaskedTextBox();
-            cmbAkbilTipler = new ComboBox();
             btnKaydet = new Button();
+            cmbAkbilTipler = new ComboBox();
+            maskedTextBoxAkbilNo = new MaskedTextBox();
+            label2 = new Label();
+            label1 = new Label();
             dataGridViewAkbiller = new DataGridView();
             menuStrip1.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -81,34 +81,16 @@
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             // 
-            // label1
+            // btnKaydet
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(21, 43);
-            label1.Name = "label1";
-            label1.Size = new Size(93, 28);
-            label1.TabIndex = 0;
-            label1.Text = "Akbil No:";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(16, 100);
-            label2.Name = "label2";
-            label2.Size = new Size(98, 28);
-            label2.TabIndex = 0;
-            label2.Text = "Akbil Tipi:";
-            // 
-            // maskedTextBoxAkbilNo
-            // 
-            maskedTextBoxAkbilNo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBoxAkbilNo.Location = new Point(120, 43);
-            maskedTextBoxAkbilNo.Mask = "0000 0000 0000 0000";
-            maskedTextBoxAkbilNo.Name = "maskedTextBoxAkbilNo";
-            maskedTextBoxAkbilNo.Size = new Size(348, 34);
-            maskedTextBoxAkbilNo.TabIndex = 1;
+            btnKaydet.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnKaydet.Location = new Point(493, 40);
+            btnKaydet.Name = "btnKaydet";
+            btnKaydet.Size = new Size(150, 93);
+            btnKaydet.TabIndex = 3;
+            btnKaydet.Text = "YENİ AKBİL KAYDET";
+            btnKaydet.UseVisualStyleBackColor = true;
+            btnKaydet.Click += btnKaydet_Click;
             // 
             // cmbAkbilTipler
             // 
@@ -120,16 +102,34 @@
             cmbAkbilTipler.Size = new Size(348, 36);
             cmbAkbilTipler.TabIndex = 2;
             // 
-            // btnKaydet
+            // maskedTextBoxAkbilNo
             // 
-            btnKaydet.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnKaydet.Location = new Point(493, 40);
-            btnKaydet.Name = "btnKaydet";
-            btnKaydet.Size = new Size(150, 93);
-            btnKaydet.TabIndex = 3;
-            btnKaydet.Text = "YENİ AKBİL KAYDET";
-            btnKaydet.UseVisualStyleBackColor = true;
-            btnKaydet.Click += btnKaydet_Click;
+            maskedTextBoxAkbilNo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedTextBoxAkbilNo.Location = new Point(120, 43);
+            maskedTextBoxAkbilNo.Mask = "0000000000000000";
+            maskedTextBoxAkbilNo.Name = "maskedTextBoxAkbilNo";
+            maskedTextBoxAkbilNo.Size = new Size(348, 34);
+            maskedTextBoxAkbilNo.TabIndex = 1;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(16, 100);
+            label2.Name = "label2";
+            label2.Size = new Size(98, 28);
+            label2.TabIndex = 0;
+            label2.Text = "Akbil Tipi:";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(21, 43);
+            label1.Name = "label1";
+            label1.Size = new Size(93, 28);
+            label1.TabIndex = 0;
+            label1.Text = "Akbil No:";
             // 
             // dataGridViewAkbiller
             // 
@@ -156,6 +156,7 @@
             MainMenuStrip = menuStrip1;
             Name = "FrmAkbiller";
             Text = "FrmAkbiller";
+            Load += FrmAkbiller_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             groupBox1.ResumeLayout(false);
